@@ -1,0 +1,19 @@
+{{#each model.data.children as |thread|}}
+
+<div style="clear: both;"></div>
+
+
+<div style="margin-top: 20px; margin-left: auto; margin-right: auto; width: 320px; text-align: center; font-family: sans-serif;">
+	<h3 style="margin-bottom: 0px">{{thread.data.title}}</h3>
+	<br>Comments: {{thread.data.num_comments}} |
+	Domain: {{thread.data.domain}}
+	<br><br>
+	Ups: {{thread.data.ups}} |
+	Downs: {{thread.data.downs}}
+	
+	<br><br>****
+
+</div>
+
+{{/each}}
+

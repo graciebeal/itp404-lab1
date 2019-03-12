@@ -1,5 +1,25 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<header>
+	<h1 style="text-align: center; font-family: sans-serif;">JavaScript Subreddit</h1>
+</header>
+
+<nav style="width: 100px; margin-left: auto; margin-right: auto;">
+
+{{#link-to "index"}}
+	<h4 style="margin: 5px; float: left; font-family: sans-serif; color: #ff4301;">Home</h4>
+{{/link-to}}
+
+{{#link-to "info"}}
+	<h4 style="margin: 5px; margin-bottom: 20px; float: left;font-family: sans-serif;color: #ff4301;">Info</h4>
+{{/link-to}}
+
+
+</nav>
+
+
 
 {{outlet}}
+
+
+<footer style="clear: both;">
+	<p style="font-family: sans-serif; text-align: center;">&copy; ITP</p>
+</footer>
